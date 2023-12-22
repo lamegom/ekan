@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import ekan.teste.entity.Beneficiario;
+import ekan.teste.entity.Documento;
 import ekan.teste.service.BeneficiarioService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -47,6 +48,15 @@ public class BeneficiarioController {
         log.info("process=get-beneficiario, beneficiario_id={}", id);
         Optional<Beneficiario> beneficiario = beneficiarioService.getBeneficiarioById(id);
         return beneficiario.map( u -> ResponseEntity.ok(u))
+                   .orElse(ResponseEntity.notFound().build());
+    }
+    
+    @GetMapping("/{id}/documentos")
+    @PreAuthorize("isAuthenticated()")
+    public ResponseEntity<List<Documento>> getDocumentos(@PathVariable Long id) {
+        log.info("process=get-documentos, beneficiario_id={}", id);
+        Optional<Beneficiario> beneficiario = beneficiarioService.getBeneficiarioById(id);
+        return beneficiario.map( u -> ResponseEntity.ok(u.getDocumentos()))
                    .orElse(ResponseEntity.notFound().build());
     }
 
