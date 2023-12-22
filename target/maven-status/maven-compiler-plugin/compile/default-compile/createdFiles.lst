@@ -13,14 +13,12 @@ ekan/teste/web/controller/UserController.class
 ekan/teste/config/WebMvcConfig.class
 ekan/teste/model/AuthenticationRequest.class
 ekan/teste/model/AuthenticationRequest$AuthenticationRequestBuilder.class
-ekan/teste/entity/User$UserBuilder.class
 ekan/teste/repo/UserRepository.class
 ekan/teste/web/controller/AuthenticationController.class
 ekan/teste/security/auth/RestAuthenticationEntryPoint.class
 ekan/teste/service/CustomUserDetailsService.class
 ekan/teste/model/UserTokenState$UserTokenStateBuilder.class
 ekan/teste/security/SecurityUtils.class
-ekan/teste/config/SwaggerConfig.class
 ekan/teste/web/GlobalExceptionHandler.class
 ekan/teste/model/ErrorMessage.class
 ekan/teste/entity/User.class

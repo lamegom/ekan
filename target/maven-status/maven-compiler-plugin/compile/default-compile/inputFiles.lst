@@ -2,10 +2,10 @@
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/config/WebMvcConfig.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/service/UserService.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/web/GlobalExceptionHandler.java
+/home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/config/SwaggerConfiguration.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/SpringBootRestApiSecuredApplication.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/security/SecurityUser.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/model/UserTokenState.java
-/home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/config/SwaggerConfig.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/security/TokenHelper.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/model/ErrorMessage.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/security/auth/TokenBasedAuthentication.java
