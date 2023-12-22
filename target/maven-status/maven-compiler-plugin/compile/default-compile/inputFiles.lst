@@ -21,6 +21,7 @@
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/service/UserService.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/web/GlobalExceptionHandler.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/config/SwaggerConfiguration.java
+/home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/web/controller/DumpDbController.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/model/ErrorMessage.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/config/TimeProvider.java
 /home/emanuelle/eclipse-workspace/teste/src/main/java/ekan/teste/model/AuthenticationRequest.java
