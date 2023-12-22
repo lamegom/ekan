@@ -13,6 +13,7 @@ ekan/teste/web/controller/UserController.class
 ekan/teste/config/WebMvcConfig.class
 ekan/teste/model/AuthenticationRequest.class
 ekan/teste/model/AuthenticationRequest$AuthenticationRequestBuilder.class
+ekan/teste/config/SwaggerConfiguration.class
 ekan/teste/repo/UserRepository.class
 ekan/teste/web/controller/AuthenticationController.class
 ekan/teste/security/auth/RestAuthenticationEntryPoint.class

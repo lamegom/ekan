@@ -7,7 +7,8 @@ import java.util.stream.Collectors;
 
 public class SecurityUser extends User {
 
-    public SecurityUser(ekan.teste.entity.User u) {
+	
+	public SecurityUser(ekan.teste.entity.User u) {
         super(u.getUsername(),
               u.getPassword(),
               u.getRoles().stream().map(r -> new SimpleGrantedAuthority(r.getName())).collect(Collectors.toList()));

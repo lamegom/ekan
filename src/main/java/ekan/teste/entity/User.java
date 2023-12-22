@@ -14,13 +14,15 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
+import ekan.teste.security.SecurityUser;
 import lombok.Data;
 
 @Data
 @Entity
 @Table(name="USERS")
-public class User {
+public class User{
 
     @Id
     @SequenceGenerator(name = "user_id_generator", sequenceName = "user_id_seq")
@@ -44,6 +46,7 @@ public class User {
 
     @Column(name = "last_password_reset_date")
     private Timestamp lastPasswordResetDate;
+    
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(name = "user_role",

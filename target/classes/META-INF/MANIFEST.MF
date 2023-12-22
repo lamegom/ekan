@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: emanuelle
+Build-Jdk: 17.0.9
+Implementation-Title: teste
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: ekan
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/teste
+Created-By: Maven Integration for Eclipse
+

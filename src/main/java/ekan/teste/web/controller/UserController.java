@@ -42,6 +42,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
+    @PreAuthorize("isAuthenticated()")
     public ResponseEntity<User> getUser(@PathVariable Long id) {
         log.info("process=get-user, user_id={}", id);
         Optional<User> user = userService.getUserById(id);
@@ -51,12 +52,14 @@ public class UserController {
 
     @PostMapping("")
     @ResponseStatus(CREATED)
+    @PreAuthorize("isAuthenticated()")
     public User createUser(@RequestBody User user) {
         log.info("process=create-user, user_email={}", user.getEmail());
         return userService.createUser(user);
     }
 
     @PutMapping("/{id}")
+    @PreAuthorize("isAuthenticated()")
     public User updateUser(@PathVariable Long id, @RequestBody User user) {
         log.info("process=update-user, user_id={}", id);
         user.setId(id);
@@ -64,6 +67,7 @@ public class UserController {
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("isAuthenticated()")
     public void deleteUser(@PathVariable Long id) {
         log.info("process=delete-user, user_id={}", id);
         userService.deleteUser(id);

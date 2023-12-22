@@ -19,7 +19,7 @@ public class SwaggerConfiguration {
             .components(new Components().addSecuritySchemes("Bearer Authentication", createAPIKeyScheme()))
             .info(new Info().title("My REST API")
                 .description("Some custom description of API.")
-                .version("1.0").contact(new Contact().name("Sallo Szrajbman").email( "www.baeldung.com").url("salloszraj@gmail.com"))
+                .version("1.0").contact(new Contact().name("Marcio Lamego").email( "lamegom@me.com").url("http://linkedin/in/lamegom"))
                 .license(new License().name("License of API")
                     .url("API license URL")));
     }
