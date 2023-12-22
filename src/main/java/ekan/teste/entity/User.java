@@ -15,15 +15,20 @@ import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name="USERS")
 public class User{
-
+	
     @Id
     @SequenceGenerator(name = "user_id_generator", sequenceName = "user_id_seq")
     @GeneratedValue(generator = "user_id_generator")
