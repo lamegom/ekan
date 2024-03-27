@@ -3,15 +3,6 @@
 
 projeto teste para oportunidade ekan 
 
-## Running Tests
-
-Se você não estiver com o docker ligado não se esqueça de colocar o -DskipTests no comand maven
-
-```bash
-  mvn spring-boot:run -DskipTests
-```
-
-
 ## Run Locally
 
 Clone the project
@@ -47,4 +38,10 @@ Start the server
 
 - Copie e cole clicando no botão Authorize
 
-- Depois vá em beneficiario-controller >> /api/benficiarios e liste os beneficiarios existentes
+
+- Cadastrar um beneficiário junto com seus documentos; beneficiario-controller >> /api/benficiarios POST
+- Listar todos os beneficiários cadastrados; beneficiario-controller >> /api/benficiarios GET
+- Listar todos os documentos de um beneficiário a partir de seu id; beneficiario-controller >> /api/benficiarios/{id} GET
+- Atualizar os dados cadastrais de um beneficiário; beneficiario-controller >> /api/benficiarios/{id} PUT
+- Remover um beneficiário. beneficiario-controller >> /api/benficiarios/{id} DELETE
+
