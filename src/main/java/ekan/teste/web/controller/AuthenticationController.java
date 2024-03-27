@@ -48,6 +48,8 @@ public class AuthenticationController {
     public ResponseEntity<?> createAuthenticationToken(
             @RequestBody AuthenticationRequest authenticationRequest) throws AuthenticationException {
 
+    	System.out.println("here: "+authenticationRequest.getUsername() + " -- " + authenticationRequest.getPassword());
+    	
         final Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         authenticationRequest.getUsername(),
