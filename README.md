@@ -15,6 +15,7 @@ Go to the project directory
 
 ```bash
   cd ekan
+  git checkout master
 ```
 
 Install dependencies
